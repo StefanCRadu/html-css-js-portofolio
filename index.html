@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Radu Ștefan</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Radu C. Ștefan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Radu Ștefan profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Radu Ștefan</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/resume.pdf')">
+            Download CV
+            </button>
+            <button class="btn btn-color-1" 
+            onclick="location.href='./#contact'">
+            Contact Info
+        </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/%C8%99tefan-radu-2b54b4307/'">
+                <img src="./assets/github.png" 
+                alt="My GitHub profile" 
+                class="icon"
+                onclick="location.href='https://github.com/StefanCRadu'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <hq class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.jpeg" alt="Profile picture"
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <h3 style="font-size: small"></h3style>Experience</h3>
+                            <p style="font-size: small"></pstyle>Perfect Scores in<br/> Mathematical Analysis and Accounting <br/> Volunteering</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" 
+                            alt="Education icon"
+                            class="icon"
+                            />
+                            <h3 style="font-size: small"> Education</h3>
+                            <p style="font-size: small">B.Sc. Economic Management (class of 2026) <br/> High School Diploma Exam</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p style="font-size: small">
+                            I am a dedicated student at the Bucharest Academy of Economic Studies, specializing in mathematical analysis and accounting. Renowned for my meticulous approach, I excel academically, achieving top results and creatively applying my knowledge. My skills in organizing complex information make me a valuable team asset.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Developement</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >HTML</h3>
+                                <p > Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >CSS</h3>
+                                <p > Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >JavaScript</h3>
+                                <p >Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >TypeScript</h3>
+                                <p >Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >Material UI</h3>
+                                <p >Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Analytical Proficiencies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Accounting</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Maths</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Word</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>PowerPoint</h3>
+                                <p>Experienced</p>
+                            </div>
+                      </article>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#projects'"/>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
